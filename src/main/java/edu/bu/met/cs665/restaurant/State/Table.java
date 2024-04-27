@@ -36,4 +36,13 @@ public class Table {
   public void requestState() {
     this.state.handleRequest(this);
   }
+
+  /**
+   * Gets the current state of the table.
+   *
+   * @return The current state of the table.
+   */
+  public TableState getState() {
+    return this.state;
+  }
 }
