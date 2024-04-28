@@ -1,7 +1,7 @@
 /**
- * Name: YOUR_NAME
+ * Name: Aman Kumar
  * Course: CS-665 Software Designs & Patterns
- * Date: MM/DD/YYYY
+ * Date: 05/02/2024
  * File Name: Main.java
  * Description: Main class to simulate the restaurant operation with various design patterns.
  */
@@ -31,7 +31,7 @@ public class Main {
 
   private static final Scanner scanner = new Scanner(System.in);
   private static final Map<Integer, Table> tables = new HashMap<>();
-  private static final int numberOfTables = 4; // Total number of tables available
+  private static final int numberOfTables = 4;
 
   public static void main(String[] args) {
     initializeTables();

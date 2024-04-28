@@ -1,7 +1,7 @@
 /**
- * Name: YOUR_NAME
+ * Name: Aman Kumar
  * Course: CS-665 Software Designs & Patterns
- * Date: MM/DD/YYYY
+ * Date: 05/02/2024
  * File Name: SimpleFoodItem.java
  * Description: Concrete implementation of the FoodItem interface.
  */
@@ -18,7 +18,7 @@ public class SimpleFoodItem implements FoodItem {
 
   private String name;
   private double price;
-  private List<String> ingredients;
+  private final List<String> ingredients;
   private String description;
 
   public SimpleFoodItem() {

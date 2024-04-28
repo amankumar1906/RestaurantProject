@@ -1,7 +1,7 @@
 /**
- * Name: YOUR_NAME
+ * Name: Aman Kumar
  * Course: CS-665 Software Designs & Patterns
- * Date: MM/DD/YYYY
+ * Date: 05/02/2024
  * File Name: FoodItemDecorator.java
  * Description: Abstract decorator class for food items.
  */
