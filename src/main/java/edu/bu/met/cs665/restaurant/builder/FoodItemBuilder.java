@@ -16,7 +16,10 @@ import edu.bu.met.cs665.restaurant.common.FoodItem;
  */
 public interface FoodItemBuilder {
   FoodItemBuilder setName(String name);
+
   FoodItemBuilder setBasePrice(double price);
+
   FoodItemBuilder addIngredient(String ingredient);
+
   FoodItem build();
 }

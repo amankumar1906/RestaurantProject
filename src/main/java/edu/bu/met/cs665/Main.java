@@ -10,7 +10,12 @@ package edu.bu.met.cs665;
 
 import edu.bu.met.cs665.restaurant.builder.ConcreteFoodItemBuilder;
 import edu.bu.met.cs665.restaurant.builder.FoodItemBuilder;
-import edu.bu.met.cs665.restaurant.chainOfResponsibility.*;
+import edu.bu.met.cs665.restaurant.chainofresponsibility.BillHandler;
+import edu.bu.met.cs665.restaurant.chainofresponsibility.CleaningHandler;
+import edu.bu.met.cs665.restaurant.chainofresponsibility.Handler;
+import edu.bu.met.cs665.restaurant.chainofresponsibility.OrderHandler;
+import edu.bu.met.cs665.restaurant.chainofresponsibility.Request;
+import edu.bu.met.cs665.restaurant.common.FoodItem;
 import edu.bu.met.cs665.restaurant.decorator.WithExtraCheese;
 import edu.bu.met.cs665.restaurant.decorator.WithSauce;
 import edu.bu.met.cs665.restaurant.state.FreeState;
@@ -20,9 +25,9 @@ import edu.bu.met.cs665.restaurant.strategy.HappyHourPricingStrategy;
 import edu.bu.met.cs665.restaurant.strategy.PeakHourPricingStrategy;
 import edu.bu.met.cs665.restaurant.strategy.PricingStrategy;
 import edu.bu.met.cs665.restaurant.strategy.RegularPricingStrategy;
-import edu.bu.met.cs665.restaurant.common.FoodItem;
-
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 /**
  * This is the Main class that simulates the restaurant operation.
@@ -33,6 +38,13 @@ public class Main {
   private static final Map<Integer, Table> tables = new HashMap<>();
   private static final int numberOfTables = 4;
 
+  /**
+   * The entry point of the restaurant management system.
+   * This method initializes the tables and enters a loop to handle user interactions
+   * such as adding customers to tables, processing bills, and exiting the system.
+   *
+   * @param args the command line arguments, not used in this application.
+   */
   public static void main(String[] args) {
     initializeTables();
 
@@ -130,7 +142,8 @@ public class Main {
   }
 
   private static FoodItem takeOrder() {
-    System.out.println("Building your food item. Please enter the base food (Pizza, Burger, Salad):");
+    System.out.println("Building your food item."
+        + " Please enter the base food (Pizza, Burger, Salad):");
     scanner.nextLine(); // clear buffer
     String baseFood = scanner.nextLine();
 

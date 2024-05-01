@@ -15,10 +15,16 @@ import java.util.List;
  */
 public interface FoodItem {
   String getName();
+
   double getPrice();
+
   List<String> getIngredients();
+
   void setName(String name);
+
   void setPrice(double price);
+
   void addIngredient(String ingredient);
-  String getDescription(); // For decorators
+
+  String getDescription();
 }

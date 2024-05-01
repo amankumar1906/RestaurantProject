@@ -2,7 +2,7 @@ package edu.bu.met.cs665;
 
 import edu.bu.met.cs665.restaurant.builder.ConcreteFoodItemBuilder;
 import edu.bu.met.cs665.restaurant.builder.FoodItemBuilder;
-import edu.bu.met.cs665.restaurant.chainOfResponsibility.*;
+import edu.bu.met.cs665.restaurant.chainofresponsibility.*;
 import edu.bu.met.cs665.restaurant.decorator.WithExtraCheese;
 import edu.bu.met.cs665.restaurant.decorator.WithSauce;
 import edu.bu.met.cs665.restaurant.state.FreeState;
