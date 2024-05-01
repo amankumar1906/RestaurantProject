@@ -6,7 +6,7 @@
  * Description: Interface for different pricing strategies based on business hours.
  */
 
-package edu.bu.met.cs665.restaurant.Strategy;
+package edu.bu.met.cs665.restaurant.strategy;
 
 import edu.bu.met.cs665.restaurant.common.FoodItem;
 

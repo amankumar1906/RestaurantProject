@@ -6,7 +6,7 @@
  * Description: This class is responsible for managing the state of a table.
  */
 
-package edu.bu.met.cs665.restaurant.State;
+package edu.bu.met.cs665.restaurant.state;
 
 /**
  * This is the Table class.

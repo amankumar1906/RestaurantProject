@@ -6,7 +6,7 @@
  * Description: Handler for cleaning requests.
  */
 
-package edu.bu.met.cs665.restaurant.ChainOfResponsibility;
+package edu.bu.met.cs665.restaurant.chainOfResponsibility;
 
 /**
  * Handler for cleaning requests.

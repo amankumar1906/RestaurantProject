@@ -6,7 +6,7 @@
  * Description: Handler for order requests.
  */
 
-package edu.bu.met.cs665.restaurant.ChainOfResponsibility;
+package edu.bu.met.cs665.restaurant.chainOfResponsibility;
 
 /**
  * Handler for order requests.

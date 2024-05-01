@@ -6,7 +6,7 @@
  * Description: A request class for handlers to process.
  */
 
-package edu.bu.met.cs665.restaurant.ChainOfResponsibility;
+package edu.bu.met.cs665.restaurant.chainOfResponsibility;
 
 /**
  * Class for representing a request.

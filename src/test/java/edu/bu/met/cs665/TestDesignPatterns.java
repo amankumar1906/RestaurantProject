@@ -1,17 +1,17 @@
 package edu.bu.met.cs665;
 
-import edu.bu.met.cs665.restaurant.Builder.ConcreteFoodItemBuilder;
-import edu.bu.met.cs665.restaurant.Builder.FoodItemBuilder;
-import edu.bu.met.cs665.restaurant.ChainOfResponsibility.*;
-import edu.bu.met.cs665.restaurant.Decorator.WithExtraCheese;
-import edu.bu.met.cs665.restaurant.Decorator.WithSauce;
-import edu.bu.met.cs665.restaurant.State.FreeState;
-import edu.bu.met.cs665.restaurant.State.OccupiedState;
-import edu.bu.met.cs665.restaurant.State.Table;
-import edu.bu.met.cs665.restaurant.Strategy.HappyHourPricingStrategy;
-import edu.bu.met.cs665.restaurant.Strategy.PeakHourPricingStrategy;
-import edu.bu.met.cs665.restaurant.Strategy.PricingStrategy;
-import edu.bu.met.cs665.restaurant.Strategy.RegularPricingStrategy;
+import edu.bu.met.cs665.restaurant.builder.ConcreteFoodItemBuilder;
+import edu.bu.met.cs665.restaurant.builder.FoodItemBuilder;
+import edu.bu.met.cs665.restaurant.chainOfResponsibility.*;
+import edu.bu.met.cs665.restaurant.decorator.WithExtraCheese;
+import edu.bu.met.cs665.restaurant.decorator.WithSauce;
+import edu.bu.met.cs665.restaurant.state.FreeState;
+import edu.bu.met.cs665.restaurant.state.OccupiedState;
+import edu.bu.met.cs665.restaurant.state.Table;
+import edu.bu.met.cs665.restaurant.strategy.HappyHourPricingStrategy;
+import edu.bu.met.cs665.restaurant.strategy.PeakHourPricingStrategy;
+import edu.bu.met.cs665.restaurant.strategy.PricingStrategy;
+import edu.bu.met.cs665.restaurant.strategy.RegularPricingStrategy;
 import edu.bu.met.cs665.restaurant.common.FoodItem;
 import org.junit.Test;
 

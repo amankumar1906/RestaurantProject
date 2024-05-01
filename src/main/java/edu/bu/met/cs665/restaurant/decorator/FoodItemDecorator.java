@@ -6,7 +6,7 @@
  * Description: Abstract decorator class for food items.
  */
 
-package edu.bu.met.cs665.restaurant.Decorator;
+package edu.bu.met.cs665.restaurant.decorator;
 
 import edu.bu.met.cs665.restaurant.common.FoodItem;
 import java.util.List;

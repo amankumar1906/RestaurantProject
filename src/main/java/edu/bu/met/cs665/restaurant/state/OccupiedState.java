@@ -6,7 +6,7 @@
  * Description: This class represents an occupied state of a Table.
  */
 
-package edu.bu.met.cs665.restaurant.State;
+package edu.bu.met.cs665.restaurant.state;
 
 /**
  * This is the OccupiedState class.

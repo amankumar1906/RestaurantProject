@@ -6,7 +6,7 @@
  * Description: Abstract Handler in the chain of responsibility pattern.
  */
 
-package edu.bu.met.cs665.restaurant.ChainOfResponsibility;
+package edu.bu.met.cs665.restaurant.chainOfResponsibility;
 
 /**
  * Handler interface for the chain of responsibility pattern.

@@ -6,7 +6,7 @@
  * Description: This class is a concrete builder for creating food items.
  */
 
-package edu.bu.met.cs665.restaurant.Builder;
+package edu.bu.met.cs665.restaurant.builder;
 
 import edu.bu.met.cs665.restaurant.common.FoodItem;
 import edu.bu.met.cs665.restaurant.common.SimpleFoodItem;

@@ -6,7 +6,7 @@
  * Description: Adds sauce to the food item.
  */
 
-package edu.bu.met.cs665.restaurant.Decorator;
+package edu.bu.met.cs665.restaurant.decorator;
 
 import edu.bu.met.cs665.restaurant.common.FoodItem;
 

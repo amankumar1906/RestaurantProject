@@ -6,7 +6,7 @@
  * Description: This interface defines the methods for building a food item.
  */
 
-package edu.bu.met.cs665.restaurant.Builder;
+package edu.bu.met.cs665.restaurant.builder;
 
 import edu.bu.met.cs665.restaurant.common.FoodItem;
 

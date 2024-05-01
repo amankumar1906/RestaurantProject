@@ -6,7 +6,7 @@
  * Description: Handler for billing requests.
  */
 
-package edu.bu.met.cs665.restaurant.ChainOfResponsibility;
+package edu.bu.met.cs665.restaurant.chainOfResponsibility;
 
 /**
  * Handler for billing requests.
