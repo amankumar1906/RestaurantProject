@@ -142,28 +142,44 @@ public class Main {
   }
 
   private static FoodItem takeOrder() {
-    System.out.println("Building your food item."
-        + " Please enter the base food (Pizza, Burger, Salad):");
-    scanner.nextLine();
+    System.out.println("Building your food item. Please enter the base food (Pizza, Burger, Salad):");
+    scanner.nextLine(); // Clear any leftover newline characters in the input buffer
     String baseFood = scanner.nextLine();
 
     FoodItemBuilder builder = new ConcreteFoodItemBuilder();
-    FoodItem item = builder.setName(baseFood)
-        .setBasePrice(10.0)
-        .build();
+    builder.setName(baseFood);
+
+    // Assign different prices based on the type of food
+    switch (baseFood.toLowerCase()) {
+      case "pizza":
+        builder.setBasePrice(12.0); // Set base price for Pizza
+        break;
+      case "burger":
+        builder.setBasePrice(10.0); // Set base price for Burger
+        break;
+      case "salad":
+        builder.setBasePrice(8.0); // Set base price for Salad
+        break;
+      default:
+        System.out.println("Invalid food item. Defaulting to $10.0");
+        builder.setBasePrice(10.0); // Default price if invalid input
+    }
+
+    FoodItem item = builder.build();
 
     System.out.println("Would you like to add extra cheese? (yes/no)");
     if (scanner.nextLine().equalsIgnoreCase("yes")) {
-      item = new WithExtraCheese(item);
+      item = new WithExtraCheese(item);  // Wrap the item with the cheese decorator
     }
 
     System.out.println("Would you like to add extra sauce? (yes/no)");
     if (scanner.nextLine().equalsIgnoreCase("yes")) {
-      item = new WithSauce(item);
+      item = new WithSauce(item);  // Further wrap the item with the sauce decorator
     }
 
     return item;
   }
+
 
   private static PricingStrategy selectPricingStrategy() {
     System.out.println("Select business hour: 1 for Happy Hour, 2 for Peak Hour, 3 for Regular");
