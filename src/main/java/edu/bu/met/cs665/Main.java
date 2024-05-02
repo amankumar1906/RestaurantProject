@@ -144,12 +144,12 @@ public class Main {
   private static FoodItem takeOrder() {
     System.out.println("Building your food item."
         + " Please enter the base food (Pizza, Burger, Salad):");
-    scanner.nextLine(); // clear buffer
+    scanner.nextLine();
     String baseFood = scanner.nextLine();
 
     FoodItemBuilder builder = new ConcreteFoodItemBuilder();
     FoodItem item = builder.setName(baseFood)
-        .setBasePrice(10.0) // Simple flat rate for example purposes
+        .setBasePrice(10.0)
         .build();
 
     System.out.println("Would you like to add extra cheese? (yes/no)");
